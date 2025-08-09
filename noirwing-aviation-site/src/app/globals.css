@@ -1,0 +1,13 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:#0A0A0A; --fg:#F5F5F5; --gold:#D4AF37; --muted:rgba(255,255,255,0.75); }
+html,body { background:var(--bg); color:var(--fg); }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-2.5 font-semibold; }
+.btn-gold { background:var(--gold); color:#0A0A0A; }
+.btn-outline { @apply border border-white/20 hover:bg-white/10; }
+.card { @apply rounded-3xl border border-white/10 bg-white/5; }
+.prose-invert a { color: var(--gold); }
+
